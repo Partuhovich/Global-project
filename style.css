@@ -1,0 +1,132 @@
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #221F23;
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-inner{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.gamepad_logo{
+    padding-top: 5px;
+}
+
+.logo_name{
+    text-decoration: none;
+    color:#c920c3 ;
+    font-size: 14px;
+    letter-spacing: 7px;
+    margin-left: 10px;
+    font-family: 'Titillium Web';
+    cursor: default;
+}
+
+.logo_name:hover{
+    color:#e921e2 ;
+}
+
+.enter_button{
+    color: #221F23;
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+    transition: 0.1s;
+}
+
+.enter_button:hover{
+    background-color: white;
+}
+
+.register_button{
+    color: white;
+    text-decoration: none;
+    background-color: #c920c3;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.register_button:hover{
+    background-color:#e921e2;
+}
+
+.game_selector{
+    position: relative;
+    margin-top: 50px;
+    background-color: rgb(92, 92, 92);
+}
+
+.game_icons{
+    display: flex;
+}
+
+.game_block{
+    width: 30%;
+    float: left;
+    margin: 0 20px;
+    padding-top: 30px;
+    transition: 0.1s;
+    opacity: 0.85;
+}
+
+.game_block:hover{
+    transform: scale(1.15);
+    opacity: 1;
+
+}
+
+.game_selector_text{
+    text-align: center;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    text-decoration: none;
+    font-size: 64px;
+    color: rgb(211, 211, 211);
+    font-family: "Lobster";
+    cursor: default;
+}
+
+.futter{
+    
+}
+
+/*Lobby*/
+
+.create_lobby{
+    position: relative;
+    padding-top: 50px;
+    height: 60px;
+    background-color: rgb(92, 92, 92);
+}
+
+
+
