@@ -5,6 +5,7 @@ body{
 
 h1, h2, h3, h4, h5, p{
     margin: 0;
+    
 }
 
 .header {
@@ -47,6 +48,7 @@ h1, h2, h3, h4, h5, p{
     margin-left: 10px;
     font-family: 'Titillium Web';
     cursor: default;
+    transition: 0.1s;
 }
 
 .logo_name:hover{
@@ -108,7 +110,6 @@ h1, h2, h3, h4, h5, p{
     text-align: center;
     margin-top: 70px;
     padding-bottom: 70px;
-    text-decoration: none;
     font-size: 64px;
     color: rgb(211, 211, 211);
     font-family: "Lobster";
@@ -116,7 +117,7 @@ h1, h2, h3, h4, h5, p{
 }
 
 .futter{
-    
+    height: 50px;
 }
 
 /*Lobby*/
@@ -124,9 +125,97 @@ h1, h2, h3, h4, h5, p{
 .create_lobby{
     position: relative;
     padding-top: 50px;
-    height: 60px;
+
     background-color: rgb(92, 92, 92);
 }
 
+.create_lobby_block{
+    text-align: center;
+    padding: 40px 0;
+  
+}
+
+.create_lobby_button{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 48px;
+    color: black;
+    background-color: rgb(211, 211, 211);
+    border-radius: 4px;
+}
+
+.available_lobby{
+    background-color: rgb(58, 58, 58);
+}
+
+.lobby_selector{
+    padding: 10px 0;
+}
+
+.lobby_selector_link{
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    background-color: rgb(211, 211, 211);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
 
 
+.lobby_information{
+    margin: auto 15px;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(92, 92, 92);    
+}
+
+.lobby_selector_link_buttons{
+    display: grid;
+    padding-right: 10px;
+}
+
+.lobby_selector_link_buttons_conect{
+    width: 70px;
+    background-color: rgb(92, 92, 92);
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+.lobby_selector_link_buttons_delete{
+    width: 70px;
+    background-color: rgb(92, 92, 92);
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+/*CreateLobby*/
+
+.create_lobby_form{
+    position: relative;
+    padding-top: 50px;
+
+}
+
+.create_lobby_form_block{
+    height: 650px;
+    width: 600px;
+    background-color: rgb(92, 92, 92);
+    margin: 20px auto;
+}
+
+.create_lobby_head{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.form_block{
+    width: 350px;
+    margin: 0 auto;    
+}
