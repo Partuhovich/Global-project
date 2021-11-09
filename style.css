@@ -1,11 +1,38 @@
 body{
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, p{
     margin: 0;
     
+}
+input{
+text-align: center;
+font-size: 14px;
+border: 2px solid #E9F2FF;
+border-radius: 5px;
+}
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}  /*Delete arrows for type = number from all browsers*/
+
+.container{
+    max-width: 1200px;
+    width: 100%; 
+    margin: 0 auto;
 }
 
 .header {
@@ -13,209 +40,217 @@ h1, h2, h3, h4, h5, p{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; 
+    width: 100%;
     background-color: #221F23;
-    width: 100%;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .header-inner{
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
 }
 
 .logo{
     display: flex;
     align-items: center;
+    width: 100%;
+    margin-left: 1%;
 }
 
-.gamepad_logo{
+.logo img{
     padding-top: 5px;
 }
 
-.logo_name{
-    text-decoration: none;
+.logo img:hover{
+    filter: brightness(1.1);
+}
+
+.logo h2{
     color:#c920c3 ;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 7px;
-    margin-left: 10px;
+    margin-left: 1%;
     font-family: 'Titillium Web';
     cursor: default;
     transition: 0.1s;
 }
 
-.logo_name:hover{
+.logo h2:hover{
     color:#e921e2 ;
 }
 
-.enter_button{
-    color: #221F23;
-    text-decoration: none;
-    background-color: rgb(211, 211, 211);
-    padding: 5px 10px;
+
+.enter-button{
+    padding: 0.5% 1%; 
+    margin: 0 1%;
     border-radius: 3px;
-    margin-right: 20px;
-    transition: 0.1s;
+    transition: 0.1s;  
+    text-decoration: none; 
+    color: #221F23;
+    background-color: #d3d3d3;
 }
 
-.enter_button:hover{
-    background-color: white;
+.enter-button:hover{
+    background-color: #ffffff;
 }
 
-.register_button{
-    color: white;
+.register-button{
+    margin: 0 1%;
+    padding: 0.5% 1%;
+    border-radius: 3px;
+
+    color: #fff;
     text-decoration: none;
     background-color: #c920c3;
-    padding: 5px 10px;
-    border-radius: 3px;
+    transition: 0.1s; 
 }
 
-.register_button:hover{
+.register-button:hover{
     background-color:#e921e2;
 }
 
-.game_selector{
+/*index*/
+
+.game-selector{
     position: relative;
     margin-top: 50px;
-    background-color: rgb(92, 92, 92);
+    background-color: #5c5c5c;
 }
 
-.game_icons{
+.game-icons{
     display: flex;
+    padding-top: 30px;
 }
 
-.game_block{
+.game-icon{
+    
     width: 30%;
-    float: left;
-    margin: 0 20px;
-    padding-top: 30px;
+    margin: 0px 2%;
     transition: 0.1s;
     opacity: 0.85;
 }
 
-.game_block:hover{
+.game-icon:hover{
     transform: scale(1.15);
     opacity: 1;
-
 }
 
-.game_selector_text{
+.game-icon img{
+    width: 100%;
+}
+
+.game-selector-text{
     text-align: center;
-    margin-top: 70px;
-    padding-bottom: 70px;
+    padding: 75px 0px;
     font-size: 64px;
-    color: rgb(211, 211, 211);
+    color: #d3d3d3;
     font-family: "Lobster";
     cursor: default;
 }
 
-.futter{
-    height: 50px;
-}
+
 
 /*Lobby*/
 
-.create_lobby{
+.lobby{
     position: relative;
-    padding-top: 50px;
-
-    background-color: rgb(92, 92, 92);
-}
-
-.create_lobby_block{
-    text-align: center;
-    padding: 40px 0;
-  
-}
-
-.create_lobby_button{
-    padding: 5px 10px;
-    text-decoration: none;
-    font-size: 48px;
-    color: black;
-    background-color: rgb(211, 211, 211);
-    border-radius: 4px;
-}
-
-.available_lobby{
-    background-color: rgb(58, 58, 58);
-}
-
-.lobby_selector{
-    padding: 10px 0;
-}
-
-.lobby_selector_link{
-    width: 100%;
-    height: 50px;
-    padding: 10px 0;
-    background-color: rgb(211, 211, 211);
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-
-.lobby_information{
-    margin: auto 15px;
-    height: 50px;
-    width: 120px;
-    background-color: rgb(92, 92, 92);    
-}
-
-.lobby_selector_link_buttons{
-    display: grid;
-    padding-right: 10px;
-}
-
-.lobby_selector_link_buttons_conect{
-    width: 70px;
-    background-color: rgb(92, 92, 92);
-    text-align: center;
-    text-decoration: none;
-    color: whitesmoke;
-    margin-bottom: 5px;
-}
-
-.lobby_selector_link_buttons_delete{
-    width: 70px;
-    background-color: rgb(92, 92, 92);
-    text-align: center;
-    text-decoration: none;
-    color: whitesmoke;
+    margin-top: 50px;
+    background-color: #5c5c5c;
     
 }
 
-/*CreateLobby*/
-
-.create_lobby_form{
-    position: relative;
-    padding-top: 50px;
-
+.create-lobby{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
 }
 
-.create_lobby_form_block{
-    height: 650px;
-    width: 600px;
-    background-color: rgb(92, 92, 92);
-    margin: 20px auto;
+.create-lobby-form{
+    width: 50%;
+    margin: 0 2%;
 }
 
-.create_lobby_head{
+.form-fieldes{
+    display: block;
+}
+
+.form-field{
+   width: 100%;
+   text-align: right;
+}
+
+.create-lobby-button{
+    width: 50%;
+    text-align: left;
+    padding: 40px 0;
+    margin: 0 2%;
+}
+
+.create-lobby-button a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 34px;
+    color: #000;
+    background-color: #d3d3d3;
+    border-radius: 4px;
+}
+
+
+
+.available-lobby{
+    background-color: #3a3a3a;
+}
+
+.lobby-selector{
+    padding: 10px 0;
+}
+
+.lobby-selector-link{
+   
+    margin-bottom: 10px; 
+    height: 50px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+}
+
+
+.lobby-information{
+    margin: auto 15px;
+    height: 50px;
+    width: 120px;
+    background-color: #5c5c5c;    
+}
+
+.lobby-selector-link-buttons{
+    padding-right: 1%;
+}
+
+.lobby-selector-link-buttons a{
+    display: block;
+    border-radius: 2px;
+    padding: 2% 4%;
+    
+}
+
+.lobby-selector-link-conect{
+    width: 70px;
+    background-color: #5c5c5c;
     text-align: center;
+    text-decoration: none;
     color: #fff;
-    padding: 20px;
+    margin-bottom: 5px;
 }
 
-.form_block{
-    width: 350px;
-    margin: 0 auto;    
+.lobby-selector-link-delete{
+    width: 70px;
+    background-color: #5c5c5c;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    
 }
+
